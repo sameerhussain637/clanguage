@@ -5,15 +5,11 @@ int main() {
     
     printf("Enter the number of terms= ");
     scanf("%d", &n);
-    
-    printf("Fibonacci Series here= ");
-    
-    for (i = 1; i <= n; ++i) {
-        printf("%d, ", num1);
+        
+    for (i = 1; i <= n; i++) {
         nextNum = num1 + num2;
         num1 = num2;
         num2 = nextNum;
+        printf("%d, ", num1);
     }
-    
-    return 0;
 }
